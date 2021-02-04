@@ -1,5 +1,3 @@
-> We need your support to maintain this package. 💖 https://github.com/sponsors/ueberdosis
-
 # Laravel Docker Health Check
 
 A simple package that makes it easier to work with Laravel and Docker in production.
