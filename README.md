@@ -35,6 +35,19 @@ class Kernel extends HttpKernel
 }
 ```
 
+Update your health check script to curl the newly registered route `/docker-health-check`. The following is an example health check script, please update your own implementation:
+
+```bash
+#!/usr/bin/env bash
+set -e
+
+if [ $(curl -o /dev/null -L -s -w "%{http_code}\n" http://localhost/docker-health-check) = "200" ]; then
+    exit 0
+else
+    exit 1
+fi    
+```
+
 ## What problem is this package solving?
 
 When using Laravel with Docker in production you would normally write a huge entrypoint script that runs migrations, clears caches and so on. But clearing caches in this entrypoint script doesn't work well. Why?
