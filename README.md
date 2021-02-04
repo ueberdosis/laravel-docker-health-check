@@ -1,8 +1,10 @@
 # Laravel Docker Health Check
 
-A simple package that makes it easier to work with Laravel and Docker in production.
-
+[![](https://img.shields.io/packagist/v/ueberdosis/laravel-docker-health-check.svg)](https://packagist.org/packages/ueberdosis/laravel-docker-health-check)
+[![](https://img.shields.io/packagist/dt/ueberdosis/laravel-docker-health-check.svg)](https://packagist.org/packages/ueberdosis/laravel-docker-health-check)
 [![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub)](https://github.com/sponsors/ueberdosis)
+
+A simple package that makes it easier to work with Laravel and Docker in production.
 
 ## Installation
 
