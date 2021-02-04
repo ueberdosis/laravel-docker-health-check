@@ -39,7 +39,7 @@ class Kernel extends HttpKernel
 
 When using Laravel with Docker in production you would normally write a huge entrypoint script that runs migrations, clears caches and so on. But clearing caches in this entrypoint script doesn't work well. Why?
 
-Well, the orchestrator waits for the Laravel Container to become healthy before directing the actual traffic to it. So when you update your stack, the old container will handle all the traffic at the moment when you call `php artisan view:clear` in your entrypoint up to the moment when the new container is healthy. When traffic hits the site in that moment, the cache will be rebuilt in the old container.
+Well, the orchestrator waits for the Laravel container to become healthy before directing actual traffic to it. So when you update your stack, the old container will handle all the traffic at the moment when you call `php artisan view:clear` in your entrypoint up to the moment when the new container is healthy. When traffic hits the site in that moment, the cache will be rebuilt in the old container.
 
 This is a huge pain on big dockerized Laravel apps. This package will clear caches on the first request to a new container by using a temporary file in the app root.
 
