@@ -11,10 +11,6 @@ A simple package that makes it easier to work with Laravel and Docker in product
 Install it with composer:
 
 ```bash
-# Add private repo
-composer config repositories.laravel-docker-health-check vcs git@github.com:ueberdosis/laravel-docker-health-check.git
-
-# Require it
 composer require ueberdosis/laravel-docker-health-check
 ```
 
