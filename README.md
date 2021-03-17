@@ -28,7 +28,7 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         // ...
-        Ueberdosis\DockerHealthCheck\Middleware\ClearCacheOnInitialRequest::class,
+        \Ueberdosis\DockerHealthCheck\Middleware\ClearCacheOnInitialRequest::class,
     ];
     
     // ...
